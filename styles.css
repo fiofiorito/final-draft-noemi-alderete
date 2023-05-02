@@ -1,0 +1,531 @@
+/*
+font-family: 'Cinzel', serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Tenor Sans', sans-serif;
+ */
+
+
+/* Mobile version */
+body {
+    font-family: 'Tenor Sans', sans-serif;
+    background-color: #1b2d3f;
+    color: #fefbe8;
+    margin: 0 auto;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    margin: 0;
+    text-shadow: -2px 1px 3px #0e1822;
+    
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* navbar */
+header {
+    background: #fff;
+    padding: 1em 0 0.25em;
+    text-align: center;
+}
+
+.logo-img {
+    width: 4rem;
+}
+
+.nav {
+    width: 100%;
+}
+
+.nav-toggle {
+    cursor: pointer;
+    border: 0;
+    width: 4em;
+    height: 4em;
+    padding: 0em;
+    margin-left: 2em;
+    border-radius: 50%;
+    background: #04234f;
+    /* color: #0e1822; */
+    transition: opacity 250ms ease;
+    position: absolute;
+    left: 0;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+    opacity: .75;
+}
+
+.hamburger {
+    width: 50%;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 100%;
+}
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+
+.hamburger::after {
+    transform: translateY(3px);
+}
+
+.nav {
+    visibility: hidden;
+    height: 0;
+    position: relative;
+}
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+} 
+
+.nav__list {
+    padding: 0;
+}
+
+.nav__item {
+    list-style: none;
+    text-align: center;
+}
+
+.nav__list--secondary .nav__item {
+    margin-top: 1em;
+}
+
+.nav__link {
+    color: #0e1822;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 2.25;
+    font-size: 1rem;
+}
+
+
+/* inicio */
+.inicio {
+    padding: 2em 0;
+}
+
+.inicio__h2 {
+    font-size: 1.25rem;
+    padding: 0.7em 0 2em;
+}
+
+.btn-leermas {
+    text-decoration: none;
+    background-color: #fefbe8;
+    color: #1b2d3f;
+    font-size: 1.25rem;
+    border-radius: 100px;
+    padding: 0.5em 1.75em;
+}
+
+.btn-leermas:hover, .btn-leermas:focus {
+    background-color: #e8deca;
+}
+
+.inicio__img {
+    max-width: 80%;
+    margin-top: 2.5em;
+    box-shadow: -1px 1px 3px #0e1822;
+}
+
+/* sentidos */
+.sentidos {
+    background-color: #FEFBE8;
+    color: #04234f;
+    padding: 2.5em 0;
+}
+
+.sentidos__h2 {
+    font-family: 'Cinzel', serif;
+    width: 80%;
+    margin: 0 auto 1.125em;
+}
+
+.sentidos__h2--h2 {
+    font-size: 1rem;
+
+}
+
+/* sentidos grid */
+.container-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.row-grid {
+    background-color: #3A8693;
+    border-radius: 20px;
+    color: #FEFBE8;
+    padding: 0.25em 1em 3em;
+}
+
+.sentidos-grid__h3 {
+    font-family: 'Cinzel', serif;
+    margin: 1em 1.25em;
+}
+
+.btn-sentidos {
+    text-decoration: none;
+    color: #FEFBE8;
+    padding: 1em 1.5em;
+    background-color: #04234F;
+    border-radius: 100px;
+    position: relative;
+    top: 1em;
+}
+
+.btn-sentidos:hover, .btn-sentidos:focus {
+    opacity: 0.90;
+}
+
+.sentidos-grid__p {
+    margin: 1em 1.25em;
+}
+
+/* sobre mi */
+.sobre-mi {
+    background-color: #1D6373;
+    color: #E8D6CA;
+    padding: 3.25em 0;
+}
+
+.sobre-mi__h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.25rem
+}
+
+.sobre-mi__img {
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 3px solid #E8D6CA;
+    box-shadow: 0px 1px 3px #c1b2a8;
+}
+
+.sobre-mi__p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    padding-bottom: 1em;
+}
+
+.btn-sobre-mi {
+    background-color: #F2D5C5;
+    color: #0B4960;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    border-radius: 100px;
+}
+
+.btn-sobre-mi:hover, .btn-sobre-mi:focus {
+    background-color: #cfbeb2;
+}
+
+/* section sesiones personalizadas */
+.sesiones-personalizadas {
+    padding: 3em 0;
+    /* background-image: url(images/sunset-silhouette.jpg); */
+}
+
+.sesiones-personalizadas__h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    margin: 0;
+    padding-bottom: 1.5rem;
+}
+
+.sesiones-personalizadas__h3--h3 {
+    padding-bottom: 1.5em;
+}
+
+.sesiones-personalizadas__btn {
+    background-color: #FEFBE8;
+    color: #04234F;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.75rem 1.75rem;
+    border-radius: 100px;
+    
+}
+
+.sesiones-personalizadas__btn:hover, .sesiones-personalizadas__btn:focus {
+    background-color: #E8deca;
+}
+
+/* mensajes */
+.mensajes {
+    background-color: #E8D6CA;
+    color: #375679;
+    padding: 2em 0;
+    text-align: left;
+}
+
+.mensajes__h2, .mensajes__p {
+    color: #04234F;
+    text-align: center;
+}
+
+.mensajes__form {
+    padding: 1.25em 0;
+}
+
+.mensajes__form-input + .mensajes__form-input {
+    padding-top: 0.75em;
+}
+
+.form__input {
+    border: 1.5px solid #375679;
+    border-radius: 5px;
+    background-color: #f4fdff;
+}
+
+.mensajes__form__btn {
+    background-color: #04234F;
+    font-family: 'Tenor Sans', sans-serif;
+    color: #eafafd;
+    border: 1.5px solid #04234F;
+    border-radius: 100px;
+    padding: 0.5em 1.5em;
+    margin-top: 0.5em;
+}
+
+.mensajes__form__btn:hover, .mensajes__form__btn:focus {
+    background-color: #375679;
+    border: 1.5px solid #375679;
+}
+
+/* eventos */
+.upcoming-events {
+    background-color: #3A8693;
+    padding: 2em 0;
+}
+
+.prox-eventos__h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+}
+
+
+
+/* socials */
+.socials {
+    background-color: #FEFBE8;
+    padding: 2em 0;
+}
+
+.socials__h4 {
+    color: #04234f;
+    margin: 1em;
+}
+
+.socials__flex-img {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.socials__img {
+    width: 1.35em;
+}
+
+
+@media (min-width: 900px) {
+    /* general */
+    .container {
+        width: 85%;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .col {
+        width: 38%;
+    }
+
+    .inicio, .sobre-mi {
+        text-align: left;
+    }
+
+    /* navbar */
+    header {
+        padding: 0.5em 0;
+    }
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav {
+        visibility: visible;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-grow: 1;
+        position: relative;
+    }
+
+    .nav__list {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav__link {
+        font-size: 0.8rem;
+    }
+
+    .nav__item + .nav__item {
+        margin-left: 1em;
+    }
+
+    .logo-img {
+        position: relative;
+        left: 2rem;
+        
+    }
+
+    /* inicio */
+    .inicio {
+        padding: 0;
+    }
+
+    .inicio--col {
+        width: 55%;
+    }
+
+    .inicio__img {
+        max-width: 100%;
+        margin-top: 0;
+        box-shadow: -1px 1px 3px #0e1822;
+    }
+
+    /* sentidos */
+    .sentidos {
+        padding: 5.5em 0;
+    }
+
+    .container-grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 850px;
+        margin: 0 auto;
+    }
+
+    .row-grid {
+        display: grid;
+        padding: 0.25em 1em 2em;
+    }
+
+    .btn-sentidos {
+        display: grid;
+        align-self: flex-end;
+        /* margin: 0 1em; */
+    }
+
+    .sentidos__h2 {
+        margin-bottom: 0.5em;
+    }
+
+    .sentidos__h2--h2 {
+        margin-bottom: 2.5em;
+    }
+
+    .sentidos-grid__h3 {
+        font-size: 1.125rem;
+        margin: 1em 0;
+    }
+
+    .sentidos-grid__p {
+        margin: 0;
+    } 
+
+    /* sobre mi */
+    .col--sobre-mi {
+        width: 60%;
+        margin-left: 3em;
+    }
+
+    .sobre-mi__img {
+        width: 100%;
+        
+    }
+
+    /* sesiones personalizadas */
+    .sesiones-personalizadas {
+    padding: 5em;
+    }
+
+    /* mensajes */
+    .mensajes {
+        padding: 4em 0;
+    }
+
+    .mensajes__h2 {
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    .mensajes__p {
+        font-size: 1.5rem;
+        margin: 0.625em;
+    }
+
+    .mensajes__form {
+        background-color: #fff;
+        padding: 2em 3em;
+    }
+
+    /* events */
+    .upcoming-events {
+        text-align: left;
+        padding: 0.1em;
+    }
+
+    .prox-eventos__h2 {
+        font-size: 4rem;
+    }
+
+    .prox-eventos__p {
+        font-size: 1.25rem;
+    }
+}
+
