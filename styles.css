@@ -23,7 +23,7 @@ h1 {
     font-size: 4rem;
     margin: 0;
     text-shadow: -2px 1px 3px #0e1822;
-    
+
 }
 
 .container {
@@ -104,7 +104,7 @@ header {
     visibility: visible;
     height: auto;
     position: relative;
-} 
+}
 
 .nav__list {
     padding: 0;
@@ -147,7 +147,8 @@ header {
     padding: 0.5em 1.75em;
 }
 
-.btn-leermas:hover, .btn-leermas:focus {
+.btn-leermas:hover,
+.btn-leermas:focus {
     background-color: #e8deca;
 }
 
@@ -204,8 +205,19 @@ header {
     top: 1em;
 }
 
-.btn-sentidos:hover, .btn-sentidos:focus {
+.btn-sentidos:hover,
+.btn-sentidos:focus {
     opacity: 0.90;
+}
+
+.btn-sentidos--disabled {
+    background-color: #1a375f;
+    opacity: 0.75;
+}
+
+.btn-sentidos--disabled:hover,
+.btn-sentidos--disabled:focus {
+    opacity: 0.75;
 }
 
 .sentidos-grid__p {
@@ -246,7 +258,8 @@ header {
     border-radius: 100px;
 }
 
-.btn-sobre-mi:hover, .btn-sobre-mi:focus {
+.btn-sobre-mi:hover,
+.btn-sobre-mi:focus {
     background-color: #cfbeb2;
 }
 
@@ -274,10 +287,11 @@ header {
     text-transform: uppercase;
     padding: 0.75rem 1.75rem;
     border-radius: 100px;
-    
+
 }
 
-.sesiones-personalizadas__btn:hover, .sesiones-personalizadas__btn:focus {
+.sesiones-personalizadas__btn:hover,
+.sesiones-personalizadas__btn:focus {
     background-color: #E8deca;
 }
 
@@ -289,7 +303,8 @@ header {
     text-align: left;
 }
 
-.mensajes__h2, .mensajes__p {
+.mensajes__h2,
+.mensajes__p {
     color: #04234F;
     text-align: center;
 }
@@ -298,7 +313,7 @@ header {
     padding: 1.25em 0;
 }
 
-.mensajes__form-input + .mensajes__form-input {
+.mensajes__form-input+.mensajes__form-input {
     padding-top: 0.75em;
 }
 
@@ -318,7 +333,8 @@ header {
     margin-top: 0.5em;
 }
 
-.mensajes__form__btn:hover, .mensajes__form__btn:focus {
+.mensajes__form__btn:hover,
+.mensajes__form__btn:focus {
     background-color: #375679;
     border: 1.5px solid #375679;
 }
@@ -343,14 +359,16 @@ header {
 }
 
 .socials__h4 {
-    color: #04234f;
+    color: #0e1822;
     margin: 1em;
 }
 
-.socials__flex-img {
-    display: flex;
+.socials__grid-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     margin: 0 auto;
-    justify-content: center;
+    width: 30vw;
+    justify-content: space-around;
     align-items: center;
     gap: 1em;
 }
@@ -359,8 +377,18 @@ header {
     width: 1.35em;
 }
 
+.socials-ahref {
+    text-decoration: none;
+    color: #0e1822;
+}
+
+.socials-ahref:hover,
+.socials-ahref:focus {
+    color: #1D6373;
+}
 
 @media (min-width: 900px) {
+
     /* general */
     .container {
         width: 85%;
@@ -380,7 +408,8 @@ header {
         width: 38%;
     }
 
-    .inicio, .sobre-mi {
+    .inicio,
+    .sobre-mi {
         text-align: left;
     }
 
@@ -388,6 +417,7 @@ header {
     header {
         padding: 0.5em 0;
     }
+
     .nav-toggle {
         display: none;
     }
@@ -412,14 +442,14 @@ header {
         font-size: 0.8rem;
     }
 
-    .nav__item + .nav__item {
+    .nav__item+.nav__item {
         margin-left: 1em;
     }
 
     .logo-img {
         position: relative;
         left: 2rem;
-        
+
     }
 
     /* inicio */
@@ -476,7 +506,7 @@ header {
 
     .sentidos-grid__p {
         margin: 0;
-    } 
+    }
 
     /* sobre mi */
     .col--sobre-mi {
@@ -486,12 +516,12 @@ header {
 
     .sobre-mi__img {
         width: 100%;
-        
+
     }
 
     /* sesiones personalizadas */
     .sesiones-personalizadas {
-    padding: 5em;
+        padding: 5em;
     }
 
     /* mensajes */
@@ -528,4 +558,3 @@ header {
         font-size: 1.25rem;
     }
 }
-
